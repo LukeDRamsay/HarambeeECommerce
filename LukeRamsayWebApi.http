@@ -1,0 +1,6 @@
+@LukeRamsayWebApi_HostAddress = http://localhost:5288
+
+GET {{LukeRamsayWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
