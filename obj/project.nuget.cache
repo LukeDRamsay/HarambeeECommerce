@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v5Uko1ngWODQciHGa+XSMF6Oz5J3BhRoONm/wVa+HmGD/YWSAWkBXhxxwMGhfX52iGOoQUIydLSgdNxsuvJP4w==",
+  "dgSpecHash": "TStIOPeMLZQPu92t2xVVQ2AEEVos0gJU9ySErX6cnK0Rc7ru5lcpnxqMyYrYrWgEixGT01UqYgdKFz/HF2yGuA==",
   "success": true,
   "projectFilePath": "/Users/luke/Desktop/Luke Ramsay Harambee/LukeRamsayWebApi/LukeRamsayWebApi.csproj",
   "expectedPackageFiles": [
@@ -48,10 +48,10 @@
     "/Users/luke/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/Users/luke/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/luke/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
-    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/luke/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "/Users/luke/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/luke/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/luke/.nuget/packages/system.composition/6.0.0/system.composition.6.0.0.nupkg.sha512",
