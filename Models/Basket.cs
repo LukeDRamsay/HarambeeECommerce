@@ -8,12 +8,12 @@ namespace LukeRamsayWebAPI.Models
         public DateTime? LastUpdatedDate { get; set; }
         public List<BasketItem>? Items { get; set; }
         public decimal? TotalPrice
-        {
-            get
-            {
-                return Items?.Sum(item => item.Quantity * item.Product.Price) ?? 0;
-            }
-        }
+{
+    get
+    {
+        return Items?.Sum(item => item.Quantity * item.Product.Price) ?? 0;
+    }
+}
         public string? DiscountCode { get; set; }
 
         public string? Status { get; set; }

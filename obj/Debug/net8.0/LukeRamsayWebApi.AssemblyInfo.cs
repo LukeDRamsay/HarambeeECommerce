@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LukeRamsayWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfcf4f3f22f55ab09f7ac8f599376d22ae532a54")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b85e796f4f8a9cea5ca8a5372449348d5ea23dba")]
 [assembly: System.Reflection.AssemblyProductAttribute("LukeRamsayWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LukeRamsayWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
