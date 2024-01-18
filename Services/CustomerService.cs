@@ -6,8 +6,8 @@ namespace LukeRamsayWebAPI.services
     public interface ICustomerService
     {
         Task<IEnumerable<Customer>> GetAllCustomersAsync();
-        Task<Customer> GetCustomerByIdAsync(int customerId);
-        Task<Customer> CreateCustomerAsync(Customer customer);
+        Task<Customer?> GetCustomerByIdAsync(int customerId);
+        Task<Customer?> CreateCustomerAsync(Customer customer);
         Task UpdateCustomerAsync(Customer customer);
         Task DeleteCustomerAsync(int customerId);
     }
@@ -31,7 +31,7 @@ namespace LukeRamsayWebAPI.services
             return await _context.Customers.FirstOrDefaultAsync(c => c.CustomerId == customerId);
         }
 
-        public async Task<Customer> CreateCustomerAsync(Customer customer)
+        public async Task<Customer?> CreateCustomerAsync(Customer customer)
         {
             _context.Customers.Add(customer);
             await _context.SaveChangesAsync();

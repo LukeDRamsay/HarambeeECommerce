@@ -14,10 +14,13 @@ namespace LukeRamsayWebAPI.services
     public class BasketService : IBasketService
     {
         private readonly ECommerceContext _context;
+        // private readonly IDiscountService _discountService;
 
+        // public BasketService(ECommerceContext context, IDiscountService discountService)
         public BasketService(ECommerceContext context)
         {
             _context = context;
+            // _discountService = discountService;
         }
 
         public async Task<Basket> GetBasketByCustomerIdAsync(int customerId)
@@ -79,19 +82,24 @@ namespace LukeRamsayWebAPI.services
         }
 
         public async Task<decimal> CalculateTotalPriceAsync(int basketId)
+    {
+        var basket = await _context.Baskets
+            .Include(b => b.Items)
+            .ThenInclude(i => i.Product)
+            .FirstOrDefaultAsync(b => b.BasketId == basketId);
+
+        if (basket == null)
         {
-            var basket = await _context.Baskets
-                .Include(b => b.Items)
-                .ThenInclude(i => i.Product)
-                .FirstOrDefaultAsync(b => b.BasketId == basketId);
-
-            if (basket == null)
-            {
-                throw new Exception("Basket not found");
-            }
-
-            return basket.Items?.Sum(i => i.Quantity * i.Product?.Price ?? 0) ?? 0;
+            throw new Exception("Basket not found");
         }
+                    return basket.Items?.Sum(i => i.Quantity * i.Product?.Price ?? 0) ?? 0;
+        
+
+        // var totalPrice = basket.Items?.Sum(i => i.Quantity * i.Product?.Price ?? 0) ?? 0;
+        // var discount = _discountService.CalculateDiscount(basket);
+        // return totalPrice - discount;
+        
+    }
     }
 
 }
