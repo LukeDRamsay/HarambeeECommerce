@@ -10,20 +10,18 @@
 //     public class DiscountService : IDiscountService
 //     {
 //         public decimal CalculateDiscount(Basket basket)
+//     {
+//         decimal discount = 0;
+//         foreach (var item in basket.Items)
 //         {
-//             decimal discount = 0m;
-//             foreach (var item in basket.Items)
+//             if (item.Quantity > 10)
 //             {
-//                 // Check if the item and price are not null and quantity is greater than 10
-//                 if (item.Product != null && item.Product.Price != null && item.Quantity > 10)
-//                 {
-//                     decimal price = item.Product.Price.Value;
-//                     decimal quantityDiscount = item.Quantity * price * 0.10m; // 10% discount for the quantity
-//                     discount += quantityDiscount;
-//                 }
+//                 // Directly use item.Product.Price, as it's non-nullable now
+//                 discount += item.Quantity * item.Product.Price * 0.10m; // 10% discount
 //             }
-
-//             return discount;
 //         }
+
+//         return discount;
+//     }
 //     }
 // }
